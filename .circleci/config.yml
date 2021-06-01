@@ -11,9 +11,9 @@ jobs:
   test:
     docker:
       - image: cimg/base:2021.05
-      steps:
-        - checkout
-        - run: echo "testing app" 
+    steps:
+      - checkout
+      - run: echo "testing app" 
   
   deploy:
     docker:
