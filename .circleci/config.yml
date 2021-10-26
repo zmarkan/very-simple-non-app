@@ -25,9 +25,5 @@ jobs:
 workflows:
   do-all-the-things:
     jobs:
-      - build
       - test
-      - deploy:
-          requires:
-            - build
-            - test
+
